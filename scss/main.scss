@@ -1,0 +1,168 @@
+@import "includes/normalize";
+@import "includes/fonts";
+@import "includes/vars";
+// @import "libs/slick/slick";
+// @import "libs/fullpage.min.scss";
+// @import "libs/simplebar";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+  max-width: 100%;
+}
+.section {
+  margin-top: 50px;
+}
+.section-title {
+  font: 700 22px $roboto;
+  text-align: center;
+  color: $black;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.btn {
+
+}
+.subtitle {
+
+}
+
+.banner {
+  width: 100%;
+}
+.banner__link {
+  width: 100%;
+  display: block;
+}
+.banner__image {
+  width: 100%;
+
+}
+.main__content {
+  padding: 0 10px;
+}
+.popular__list {
+  display: flex;
+  justify-content: space-between;
+}
+.popular__item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid $orange;
+  border-radius: 5px;
+  padding: 15px;
+}
+.popular__image {
+  width: 100%;
+  margin-bottom: auto;
+}
+.popular__name {
+  text-align: center;
+  font: 700 20px $roboto;
+  color: $black;
+  margin-bottom: auto;
+}
+.popular__quick {
+  margin-bottom: 15px;
+}
+.popular__quick-item {
+  text-align: center;
+  font: 400 14px $roboto;
+  color: $black;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.popular__price {
+  font: 400 22px $roboto;
+  color: $orange;
+  margin-bottom: 15px;
+}
+.popular__buy {
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  background: transparent;
+  border-radius: 10px;
+  text-align: center;
+  color: $primary;
+  border: 2px solid $primary;
+  font: 400 18px $roboto;
+  text-decoration: none;
+  line-height: 46px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  &:hover {
+    background: $primary;
+    color: #FFF;
+  }
+}
+//Class work styles
+// .form__label {
+//   font-size: 16px;
+// }
+// .form__label_free {
+//   color: red;
+// }
+// .form__label_cheap {
+//   color: green;
+// }
+// .form__label_cost {
+//   color: blue;
+// }
+// .board__wrapper {
+//   border: 10px solid #f466e1;
+//   display: inline-block;
+// }
+// ul {
+//   list-style: none;
+//   margin: 0;
+//   display: flex;
+//   &:first-child {
+//     background: red;
+//   }
+//   &:last-child {
+//     background: green;
+//   } 
+// }
+// li {
+//   width: 50px;
+//   height: 50px;
+//   display: block;
+//   &:first-child {
+//     background: orange;
+//   }
+//   &:last-child {
+//     background: yellow;
+//   }
+// }
+// ul:nth-child(even):not(:last-child) {
+//   li:nth-child(odd):not(:first-child) {
+//     background: blue;
+//   }
+// }
+// ul:nth-child(odd):not(:first-child) {
+//   li:nth-child(even):not(:last-child) {
+//     background: blue;
+//   }
+// }
+
+@import "pages/task4";
+@import "pages/task5";
+@import "pages/gallery";
+@import "blocks/header";
+@import "blocks/footer";

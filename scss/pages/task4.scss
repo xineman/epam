@@ -1,0 +1,30 @@
+.ball {
+  margin: 100px auto;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle farthest-side at 37% 36%, #00FFFF 0%,  #0000FF 100%);
+  border-radius: 100px;
+}
+.blend {
+  width: 400px;
+  height: 400px;
+  background: url(../img/bg/2.jpg) center no-repeat, url(../img/bg/1.jpg);
+  background-repeat: no-repeat;
+  background-blend-mode: exclusion;
+
+  background-position: 0 0, 0,0;
+
+  transition: 1s;
+  &:hover {
+    animation: 0.5s linear 0s infinite alternate first;
+  }
+}
+
+@keyframes first {
+  from {
+    background-position: -700px 0, 0,0;
+  }
+  to {
+    background-position: 0 0 , 0,0;
+  }
+}

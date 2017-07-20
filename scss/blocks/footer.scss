@@ -1,0 +1,24 @@
+.footer__menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.footer__menu-item {
+  margin: 15px;
+  font: 400 16px $roboto;
+  color: $black;
+}
+.footer__socials {
+  display: flex;
+  justify-content: center;
+}
+.footer__socials-link {
+  margin: 15px;
+  font: 400 16px $roboto;
+  color: $black;
+}
+.footer__copy {
+  text-align: center;
+  font: 400 12px $roboto;
+  margin: 10px 0;
+}

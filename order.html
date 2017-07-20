@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Order form</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <style media="screen">
+    input, select, textarea {
+      display: block;
+      margin-bottom: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <form method="post" name="order">
+      <label for="email">E-mail: </label>
+      <input id="email" type="email" name="email" value="" placeholder="mail@example.com" pattern="([A-Za-z0-9])+\w@(([A-Za-z0-9])\w+\.)+[a-z]{2,3}" required>
+      <label for="name">First name: </label>
+      <input id="name" type="text" name="first" value="" placeholder="John" required>
+      <label for="last">Last name: </label>
+      <input id="last" type="text" name="last" value="" placeholder="Smith" required>
+      <label for="phone">Phone: </label>
+      <input id="phone" type="email" name="phone" value="" placeholder="+380505551122" required>
+      <label for="country">Country: </label>
+      <select id="country">
+        <option value="US">US</option>
+        <option value="Canada">Canada</option>
+      </select>
+      <label for="city">City: </label>
+      <input id="city" type="text" name="city" value="" placeholder="Seaside Park" required>
+      <label for="address">Address: </label>
+      <input id="address" type="text" name="address" value="" placeholder="7th ave, 25" required>
+      <label for="color">Color: </label>
+      <input id="color" type="color" name="color" value="#4286f4">
+      <label for="quantity">Quantity: </label>
+      <input id="quantity" type="number" name="quantity" value="1" required>
+      <p>Delivery type: </p>
+      <label class="form__label form__label_free" for="d1">Free (7-10 business days)</label>
+      <input id="d1" type="radio" name="delivery" value="Free" >
+      <label class="form__label form__label_cheap" for="d2">10$ (3-5 business days)</label>
+      <input id="d2" type="radio" name="delivery" value="10$" checked>
+      <label class="form__label form__label_cost" for="d3">15$ (1-2 business days)</label>
+      <input id="d3" type="radio" name="delivery" value="15$" >
+      <label for="present">It is for present</label>
+      <input id="present" type="checkbox" name="present" value="">
+      <label for="notes">Additional info:</label>
+      <textarea id="notes" name="name" rows="8" cols="40" placeholder="Deliver only on weekdays, etc..."></textarea>
+      <input type="submit" name="submit" value="Place order">
+    </form>
+  </body>
+</html>
